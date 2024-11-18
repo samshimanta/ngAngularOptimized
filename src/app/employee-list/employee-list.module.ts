@@ -5,10 +5,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import { FormsModule } from '@angular/forms';
+import { EmployeeListComponent } from './employee-list.component';
 
 @NgModule({
   declarations: [
     
+  
+    EmployeeListComponent
   ],
   imports: [
     CommonModule,
