@@ -1,4 +1,4 @@
-<mat-chip-listbox aria-label="Fish selection">
+<!-- <mat-chip-listbox aria-label="Fish selection">
   <mat-chip-option>One fish</mat-chip-option>
   <mat-chip-option>Two fish</mat-chip-option>
   <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
@@ -18,4 +18,23 @@
 
 
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<section class="overview">
+  <h1>Overview</h1>
+  <div id="chart"></div>
+</section>
+<section class="details">
+  <app-employee-list
+    [data]="salesList"
+    department="Sales"
+    (add)="add(salesList, $event)"
+    (remove)="remove(salesList, $event)"
+  ></app-employee-list>
+
+  <app-employee-list
+    [data]="rndList"
+    department="R&D"
+    (add)="add(rndList, $event)"
+    (remove)="remove(rndList, $event)"
+  ></app-employee-list>
+</section>

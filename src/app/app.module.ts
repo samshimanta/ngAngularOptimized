@@ -5,10 +5,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListGenerator } from './shared/list-generator.service';
-import { EmployeeListModule } from './employee-list/employee-list.module';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import {MatChipsModule} from '@angular/material/chips';
+import { EmployeeListModule } from './employee-list/employee-list.module';
 
 
 @NgModule({
@@ -21,8 +21,8 @@ import {MatChipsModule} from '@angular/material/chips';
     AppRoutingModule,
     SharedModule,
     ReactiveFormsModule ,
-    MatChipsModule
-    // EmployeeListModule
+    MatChipsModule,
+    EmployeeListModule
   ],
   providers: [ListGenerator],
   bootstrap: [AppComponent]

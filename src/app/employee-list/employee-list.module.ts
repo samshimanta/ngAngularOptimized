@@ -20,6 +20,9 @@ import { EmployeeListComponent } from './employee-list.component';
     MatListModule,
     MatChipsModule,
     FormsModule
+  ] ,
+  exports: [
+    EmployeeListComponent
   ]
 })
 export class EmployeeListModule { }

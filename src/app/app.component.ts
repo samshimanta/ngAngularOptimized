@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { EmployeeData, ListGenerator } from './shared/list-generator.service';
 import { Names } from './shared/names';
 import {FormBuilder, FormControl, Validators} from '@angular/forms';
@@ -58,7 +58,7 @@ export class AppComponent {
     this.rndList = this.generator.generate(Names, NumRange, 10);
   }
 
-  add(list: EmployeeData[], name: string) {
+  add(list: EmployeeData[], name: any) {
     list.unshift({ label: name, num: this.generator.generateNumber(NumRange) });
   }
 
